@@ -21,11 +21,17 @@
             #endregion
 
             #region Question 03
-            int num = Convert.ToInt32(Console.ReadLine());
-            for (int i = 2; i <= num; i+=2)
-            {
-                Console.Write(i + ", ");
-            }
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 2; i <= num; i+=2)
+            //{
+            //    Console.Write(i + ", ");
+            //}
+            #endregion
+
+            #region Question 04
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Math.Pow(num1, num2));
             #endregion
         }
     }
