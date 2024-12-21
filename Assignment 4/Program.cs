@@ -35,33 +35,48 @@
             #endregion
 
             #region Question 05
-            Console.Write("Input starting number of range: ");
-            int start = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Input starting number of range: ");
+            //    int start = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Input ending number of range: ");
+            //    int end = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine($"\nThe prime numbers between {start} and {end} are:");
+            //    for (int i = start; i <= end; i++)
+            //    {
+            //        if (IsPrime(i))
+            //        {
+            //            Console.Write($"{i} ");
+            //        }
+            //    }
+            //    Console.WriteLine();
+            //}
+            //static bool IsPrime(int num)
+            //{
+            //    if (num <= 1) 
+            //        return false;
+            //    for (int i = 2; i < num; i++)
+            //    {
+            //        if (num % i == 0) 
+            //            return false;
+            //    }
+            //    return true;
+            #endregion
 
-            Console.Write("Input ending number of range: ");
-            int end = Convert.ToInt32(Console.ReadLine());
+            #region Question 06
+            Console.Write("Enter the size of the identity matrix (n): ");
+            int n = Convert.ToInt32 (Console.ReadLine());
 
-            Console.WriteLine($"\nThe prime numbers between {start} and {end} are:");
-            for (int i = start; i <= end; i++)
+            Console.WriteLine($"\nIdentity Matrix of size {n}x{n}:\n");
+            for (int i = 0; i < n; i++)
             {
-                if (IsPrime(i))
+                for (int j = 0; j < n; j++)
                 {
-                    Console.Write($"{i} ");
+                    if (i == j)
+                        Console.Write("1 ");
+                    else
+                        Console.Write("0 ");
                 }
+                Console.WriteLine();
+                #endregion
             }
-            Console.WriteLine();
-        }
-        static bool IsPrime(int num)
-        {
-            if (num <= 1) 
-                return false;
-            for (int i = 2; i < num; i++)
-            {
-                if (num % i == 0) 
-                    return false;
-            }
-            return true;
-        #endregion
-    }
     }
 }
