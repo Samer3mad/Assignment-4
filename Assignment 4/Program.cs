@@ -29,10 +29,39 @@
             #endregion
 
             #region Question 04
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            int num2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Math.Pow(num1, num2));
+            //int num1 = Convert.ToInt32(Console.ReadLine());
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(Math.Pow(num1, num2));
             #endregion
+
+            #region Question 05
+            Console.Write("Input starting number of range: ");
+            int start = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Input ending number of range: ");
+            int end = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"\nThe prime numbers between {start} and {end} are:");
+            for (int i = start; i <= end; i++)
+            {
+                if (IsPrime(i))
+                {
+                    Console.Write($"{i} ");
+                }
+            }
+            Console.WriteLine();
         }
+        static bool IsPrime(int num)
+        {
+            if (num <= 1) 
+                return false;
+            for (int i = 2; i < num; i++)
+            {
+                if (num % i == 0) 
+                    return false;
+            }
+            return true;
+        #endregion
+    }
     }
 }
