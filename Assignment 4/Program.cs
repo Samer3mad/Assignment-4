@@ -79,9 +79,25 @@
             #endregion
 
             #region Question 07
-            string name1 = Console.ReadLine();
-            string name2 = Console.ReadLine();
-            Console.WriteLine(name1+" "+name2);
+            //string name1 = Console.ReadLine();
+            //string name2 = Console.ReadLine();
+            //Console.WriteLine(name1+" "+name2);
+            #endregion
+
+            #region Question 08
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //int[] array = new int[n];
+            //for (int i = 0; i < n; i++)
+            //{
+            //    array[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //int sum = 0;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    sum += array[i];
+            //}
+
+            //Console.WriteLine($"\nThe sum of all elements in the array is: {sum}");
             #endregion
 
         }
