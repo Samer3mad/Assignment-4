@@ -62,21 +62,28 @@
             #endregion
 
             #region Question 06
-            Console.Write("Enter the size of the identity matrix (n): ");
-            int n = Convert.ToInt32 (Console.ReadLine());
+            //Console.Write("Enter the size of the identity matrix (n): ");
+            //int n = Convert.ToInt32 (Console.ReadLine());
 
-            Console.WriteLine($"\nIdentity Matrix of size {n}x{n}:\n");
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    if (i == j)
-                        Console.Write("1 ");
-                    else
-                        Console.Write("0 ");
-                }
-                Console.WriteLine();
-                #endregion
-            }
+            //Console.WriteLine($"\nIdentity Matrix of size {n}x{n}:\n");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < n; j++)
+            //    {
+            //        if (i == j)
+            //            Console.Write("1 ");
+            //        else
+            //            Console.Write("0 ");
+            //    }
+            //    Console.WriteLine();
+            #endregion
+
+            #region Question 07
+            string name1 = Console.ReadLine();
+            string name2 = Console.ReadLine();
+            Console.WriteLine(name1+" "+name2);
+            #endregion
+
+        }
     }
 }
