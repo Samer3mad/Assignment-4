@@ -100,6 +100,27 @@
             //Console.WriteLine($"\nThe sum of all elements in the array is: {sum}");
             #endregion
 
+            #region Question 09
+            int size = Convert.ToInt32(Console.ReadLine());
+
+            int[] array = new int[size];
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int max = array[0];
+            int min = array[0];      
+            for (int i = 1; i < size; i++)
+            {
+                if (array[i] > max)
+                    max = array[i];
+                if (array[i] < min)
+                    min = array[i];
+            }
+            Console.WriteLine($"\nMaximum element in the array: {max}");
+            Console.WriteLine($"Minimum element in the array: {min}");
+            #endregion
+
         }
     }
 }
